@@ -1,0 +1,114 @@
+/* 
+=====================================
+MISSÃO:
+Corrija apenas os erros no CSS:
+1. Cor do título
+2. Layout do menu >>> check 
+3. Imagem de perfil
+4. Botão
+5. Habilidades lado a lado
+=====================================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0b15f, #f7941e);
+  color: white;
+}
+
+/* CABEÇALHO */
+.topo {
+  text-align: center;
+  padding: 30px;
+}
+
+.titulo-principal {
+  font-size: 3rem;
+  color: #073358; /* ERRO: ajuste para melhor contraste */
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+}
+
+/* MENU */
+.menu {
+display: flex;
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.menu a {
+  display: block; /* ERRO */
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* FOTO */
+.foto-perfil {
+  width: 150px;
+  border-radius: 0; /* ERRO */
+  margin-bottom: 15px;
+}
+
+/* BOTÃO */
+.botao {
+  background: white;
+  color: white; /* ERRO */
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* HABILIDADES */
+.caixas-habilidades {
+  display: block; /* ERRO */
+  margin-top: 20px;
+}
+
+.habilidade {
+  background: white;
+  color: #004b8d;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* RODAPÉ */
+.rodape {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background: rgba(0,0,0,0.2);
+}
