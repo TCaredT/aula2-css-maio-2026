@@ -2,11 +2,11 @@
 =====================================
 MISSÃO:
 Corrija apenas os erros no CSS:
-1. Cor do título
+1. Cor do título >>> check
 2. Layout do menu >>> check 
 3. Imagem de perfil
-4. Botão
-5. Habilidades lado a lado
+4. Botão >>> check
+5. Habilidades lado a lado >>> check
 =====================================
 */
 
@@ -77,12 +77,14 @@ display: flex;
   width: 150px;
   border-radius: 0; /* ERRO */
   margin-bottom: 15px;
+  box-shadow: 3px 5px 10px #073358;
 }
 
 /* BOTÃO */
 .botao {
   background: white;
-  color: white; /* ERRO */
+  color: #073358; /* ERRO */
+  font-weight: bold;
   border: none;
   padding: 12px 20px;
   margin-top: 15px;
@@ -92,8 +94,10 @@ display: flex;
 
 /* HABILIDADES */
 .caixas-habilidades {
-  display: block; /* ERRO */
+  display: flex; /* ERRO */
   margin-top: 20px;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .habilidade {
